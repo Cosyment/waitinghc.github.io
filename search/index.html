@@ -12,7 +12,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.4.1 -->
   <meta charset="UTF-8">
-  <title>2017 - Hexo</title>
+  <title>Search something... - Hexo</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -49,7 +49,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="2017 - Hexo | Hexo">
+  <meta property="og:title" content="Search something... - Hexo | Hexo">
   <meta property="og:image" content="/img/favicon.png" />
   
 
@@ -99,9 +99,7 @@
   
     mdui-drawer-body-left
   
-  
-    side-content style-fix
-   drawer-overlay-none" onresize="styleChanging()">
+   drawer-overlay-none" >
 
 
   
@@ -112,68 +110,6 @@
 
   
 
-  <div class="mdui-appbar mdui-appbar-fixed animate" id="blog-appbar">
-    <div class="mdui-toolbar mdui-color-theme">
-      
-        <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
-          <i class="mdui-icon material-icons">&#xe5d2;</i>
-        </button>
-      
-      
-        <a href="/" class="mdui-typo-headline">
-          首页
-        </a>
-        <span class="appbar-border-line mdui-hidden-xs"></span>
-      
-      <span class="mdui-typo-title
-      
-      
-        toTop
-      ">
-        2017
-      </span>
-      
-      <div class="mdui-toolbar-spacer toTop"></div>
-      
-      
-  <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu-index-more'}" id="index-more">
-    <i class="mdui-icon material-icons">&#xe417;</i>
-  </button>
-
-  <ul class="mdui-menu" id="menu-index-more">
-    
-    
-      <li class="mdui-menu-item">
-        <a class="mdui-ripple menu-badge">
-          Views: 
-          <span class="badge" id="busuanzi_value_page_pv"></span>
-        </a>
-      </li>
-    
-  </ul>
-
-
-      <div class="appbar-userview mdui-valign" mdui-menu="{target: '#menu-userview', covered: false}">
-        <img class="mdui-img-circle appbar-userview-avatar mdui-center" src="/img/avatar.png"/>
-      </div>
-      <div class="mdui-menu no-padding mdui-hidden-xs" id="menu-userview">
-  <div class="menu-userview-container">
-    <img class="mdui-img-circle menu-userview-avatar" src="/img/avatar.png"/>
-    <div class="menu-userview-content">
-      <div class="mdui-typo-body-1">waitinghc</div>
-      <div class="mdui-typo-caption">Catch one&#39;s heart,never be apart</div>
-      <div class="flex-spacer"></div>
-      <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
-    </div>
-  </div>
-</div>
-
-      
-        <button class="mdui-btn mdui-ripple mdui-btn-icon style-fix"><i class="mdui-icon material-icons">&#xe80d;</i></button>
-      
-    </div>
-  </div>
-
 
 
 
@@ -182,12 +118,10 @@
   
   <div class="mdui-drawer drawer-container
   
-    mdui-drawer-full-height mdui-drawer-close drawer-fix
-  
   
     animate
   " id="drawer">
-  <div class="drawer-head mdui-valign ">
+  <div class="drawer-head mdui-valign mdui-hidden-md-up">
   <div class="mdui-typo-title-opacity">首页</div>
   <div class="flex-spacer"></div>
   <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer-close><i class="mdui-icon material-icons">&#xe314;</i></button>
@@ -242,7 +176,7 @@
         
       </div>
     </div>
-    <div class="mdui-collapse-item mdui-collapse-item-open">
+    <div class="mdui-collapse-item ">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
         <div class="mdui-list-item-content">Years</div>
@@ -358,175 +292,23 @@
 
 
 
-  
-<div id="side-content" class="mdui-color-indigo animate">
-  <div class="mdui-grid-tile" style="overflow: visible;">
-    <div class="bg">
-      <img src="/img/random/picHD_1.png" />
-    </div>
-    <div class="mdui-grid-tile-actions mdui-grid-tile-actions-top mdui-grid-tile-actions-gradient">
-      <div class="flex-spacer"></div>
-      <div class="mdui-grid-tile-buttons">
-        
-  <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-float-right" mdui-menu="{target: '#menu-page-share'}"><i class="mdui-icon material-icons">&#xe80d;</i></button>
-
-  <ul class="mdui-menu" id="menu-page-share">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  </ul>
-
-
-      </div>
-    </div>
-  </div>
-  <div class="content">
-    <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
-    <div class="author mdui-text-center">
-      waitinghc
-    </div>
-    <div class="name">
-      2017
-    </div>
-    <div class="length" id="postsCount"></div>
-  </div>
-</div>
-<div id="contentLocation"></div>
-
-
 
 <main>
-  
+  <div id="search">
   <div class="posts-container column-3">
 
   </div>
-  <div id="content-list">
-    
-      <div class="content-item">
-        
-  
-<div class="mdui-card card-bottom-fix mdui-hoverable mdui-center">
-  <div class="posts-title mdui-typo">
-    <a href="/2017/07/11/写点什么好呢/" target="_self">写点什么好呢</a>
-  </div>
-  <div class="posts-line">
-    <div class="mdui-divider"></div>
-  </div>
-  <div class="posts-content">
-    写什么呢，好纠结，算了，还是什么都不写吧。
+
+  <div id="content-list" searchResult>
 
   </div>
-  <div class="mdui-card-media">
-    <img src="/img/random/picHD_24.png"/>
-  </div>
-  <div class="posts-bottom">
-    
-      <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon
-        
-          mdui-text-color-black-icon
-        
-         material-icons mdui-text-center">&#xe149;</i></span>
-      </div>
-      <div class="content mdui-typo">
-        
-      </div>
-    
-    
-      <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon
-        
-          mdui-text-color-black-icon
-        
-         fa fa-tags mdui-text-center"></i></span>
-      </div>
-      <div class="content mdui-typo">
-        
-      </div>
-    
-    <div class="flex-spacer"></div>
-    <div class="mdui-typo-caption-opacity mdui-valign">Jul 11, 2017</div>
-    
+
+  <div class="footer">
+    <div class="mdui-text-center mdui-text-color-theme-text">
+      It looks like you&#39;ve reached the end.
+    </div>
   </div>
 </div>
-
-
-
-      </div>
-    
-      <div class="content-item">
-        
-  
-<div class="mdui-card card-bottom-fix mdui-hoverable mdui-center">
-  <div class="posts-title mdui-typo">
-    <a href="/2017/07/11/hello-world/" target="_self">Hello World</a>
-  </div>
-  <div class="posts-line">
-    <div class="mdui-divider"></div>
-  </div>
-  <div class="posts-content">
-    Welcome to Hexo
-  </div>
-  <div class="mdui-card-media">
-    <img src="/img/random/picHD_44.png"/>
-  </div>
-  <div class="posts-bottom">
-    
-      <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon
-        
-          mdui-text-color-black-icon
-        
-         material-icons mdui-text-center">&#xe149;</i></span>
-      </div>
-      <div class="content mdui-typo">
-        
-      </div>
-    
-    
-      <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon
-        
-          mdui-text-color-black-icon
-        
-         fa fa-tags mdui-text-center"></i></span>
-      </div>
-      <div class="content mdui-typo">
-        
-      </div>
-    
-    <div class="flex-spacer"></div>
-    <div class="mdui-typo-caption-opacity mdui-valign">Jul 11, 2017</div>
-    
-  </div>
-</div>
-
-
-
-      </div>
-    
-  </div>
-  
-
-
-<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
 
 </main>
 
@@ -646,14 +428,6 @@
 
 
 
-  <script>
-    window.addEventListener("scroll", function(){
-       document.querySelector('#archives .bg .mdui-img-fluid.mdui-img-rounded')
-        .style.transform = 'translateY(' + document.body.scrollTop * 0.4 + 'px)';
-    })
-  </script>
-  
-
 
 
   
@@ -706,66 +480,8 @@
 
 
 
-  <script type="text/ls-javascript" id="style-changing-script">
-  var postsCount = $$('div.posts-container div').children('div.content-item').length || $$('#content-list').children('div.content-item').length;
-  if (postsCount === 1) {
-    var postsText = 'Post';
-  } else if (postsCount > 1) {
-    var postsText = 'Posts';
-  };
-  $$('div#postsCount').text(postsCount + ' ' + postsText);
-  var content_flag = false;
-  $$(window).on('scroll', function() {
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    var contentLocation = $$('div#contentLocation').offset().top - scrollTop - 56;
-    if (!content_flag && contentLocation < 0 && window.innerWidth < 860) {
-      $$('div#blog-appbar').addClass('style-fix');
-      $$('body').removeClass('style-fix');
-      content_flag = true;
-    } else if (content_flag && contentLocation >= 0 && window.innerWidth < 860) {
-      $$('div#blog-appbar').removeClass('style-fix');
-      $$('body').addClass('style-fix');
-      content_flag = false;
-    };
-  });
-
-  function styleChanging() {
-    var hide = new mdui.Headroom('div#blog-appbar');
-    var windowWidth = window.innerWidth,
-      toLeftWidth = 860;
-    if (windowWidth < toLeftWidth) {
-      hide.enable();
-    } else {
-      hide.disable();
-    }
-  };
-  styleChanging();
-</script>
 
 
-
-
-
-
-  <script type="text/ls-javascript" id="to-top-script">
-  /* fab */
-  (function() {
-    var pageFlag = false;
-    var fab = new mdui.Fab('#toTop');
-    fab.hide();
-    $$(window).on('scroll', function() {
-      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      var pageLocation = $$('div#top').offset().top - bodyTop;
-      if (!pageFlag && pageLocation < 0) {
-        fab.show();
-        pageFlag = true;
-      } else if (pageFlag && pageLocation >= 0) {
-        fab.hide();
-        pageFlag = false;
-      }
-    });
-  })();
-</script>
 
 
 
