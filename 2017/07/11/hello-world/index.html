@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html >
+<html lang="zh">
 
   
 <head>
@@ -12,7 +12,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.4.1 -->
   <meta charset="UTF-8">
-  <title>Hello World - Hexo</title>
+  <title>Hello World - Witinghc</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -34,10 +34,12 @@
 
   <meta name="author" content="waitinghc">
   
+      <meta name="description" content="Catch one&#39;s heart,never be apart.">
+  
   <meta name="keywords" content="blog, hexo, mdui">
 
   <!--iOS -->
-  <meta name="apple-mobile-web-app-title" content="Hexo">
+  <meta name="apple-mobile-web-app-title" content="Witinghc">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="HandheldFriendly" content="True">
@@ -49,9 +51,11 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Hello World - Hexo | Hexo">
+  <meta property="og:title" content="Hello World - Witinghc | Witinghc">
   <meta property="og:image" content="/img/favicon.png" />
   
+        <meta property="og:description" content="Catch one&#39;s heart,never be apart.">
+    
 
     
 
@@ -116,10 +120,6 @@
         <i class="mdui-icon material-icons">&#xe5d2;</i>
       </button>
       
-        <a href="/" class="mdui-typo-headline">
-          首页
-        </a>
-      
       
       <div class="mdui-toolbar-spacer"></div>
       
@@ -133,7 +133,7 @@
     
       <li class="mdui-menu-item">
         <a class="mdui-ripple menu-badge">
-          Views: 
+          浏览量: 
           <span class="badge" id="busuanzi_value_page_pv"></span>
         </a>
       </li>
@@ -149,9 +149,9 @@
     <img class="mdui-img-circle menu-userview-avatar" src="/img/avatar.png"/>
     <div class="menu-userview-content">
       <div class="mdui-typo-body-1">waitinghc</div>
-      <div class="mdui-typo-caption">Catch one&#39;s heart,never be apart</div>
+      <div class="mdui-typo-caption">Catch one&#39;s heart,never be apart.</div>
       <div class="flex-spacer"></div>
-      <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#contactDialog'}">Contact me</button>
+      <button class="mdui-btn mdui-color-theme-accent mdui-ripple" mdui-dialog="{target: '#contactDialog'}">联系我</button>
     </div>
   </div>
 </div>
@@ -171,7 +171,7 @@
     animate
   " id="drawer">
   <div class="drawer-head mdui-valign mdui-hidden-md-up">
-  <div class="mdui-typo-title-opacity">首页</div>
+  <div class="mdui-typo-title-opacity"></div>
   <div class="flex-spacer"></div>
   <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer-close><i class="mdui-icon material-icons">&#xe314;</i></button>
 </div>
@@ -184,7 +184,7 @@
       <li class="mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
         <div class="mdui-list-item-content">
-          Index
+          首页
         </div>
       </li>
     </a>
@@ -196,8 +196,8 @@
       <li class="mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
         <div class="mdui-list-item-content">
-          Archives
-          <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+          归档
+          <span class="badge new mdui-color-theme-accent" data-badge-caption="">3</span>
         </div>
       </li>
     </a>
@@ -208,27 +208,39 @@
     <div class="mdui-collapse-item ">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons">&#xe86e;</i>
-        <div class="mdui-list-item-content">Categories</div>
+        <div class="mdui-list-item-content">分类</div>
         <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
       </div>
       <div class="mdui-collapse-item-body mdui-list">
+        
+          <a href="/categories/hexo教程/" class="mdui-list-item mdui-ripple" style="display: flex">
+            hexo教程
+            <div style="flex-grow: 1;"></div>
+            <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+          </a>
         
       </div>
     </div>
     <div class="mdui-collapse-item ">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon fa fa-tags mdui-text-center"></i>
-        <div class="mdui-list-item-content">Tags</div>
+        <div class="mdui-list-item-content">标签</div>
         <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
       </div>
       <div class="mdui-collapse-item-body mdui-list">
+        
+          <a href="/tags/test/" class="mdui-list-item mdui-ripple" style="display: flex">
+            test
+            <div style="flex-grow: 1;"></div>
+            <span class="badge new mdui-color-theme-accent" data-badge-caption="">1</span>
+          </a>
         
       </div>
     </div>
     <div class="mdui-collapse-item ">
       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
         <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
-        <div class="mdui-list-item-content">Years</div>
+        <div class="mdui-list-item-content">年份</div>
         <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
       </div>
       <div class="mdui-collapse-item-body mdui-list">
@@ -245,74 +257,6 @@
 
   <div class="mdui-divider"></div>
   <div class="mdui-list" mdui-collapse="{accordion: true}" mdui-collapse>
-    
-      
-        <a href="/myfriends" target="_blank">
-          <li class="mdui-list-item mdui-ripple">
-            
-            
-              <i class="mdui-list-item-icon mdui-icon material-icons">&#xe0ba;</i>
-            
-            
-            <div class="mdui-list-item-content">Test1</div>
-          </li>
-        </a>
-      
-    
-      
-        <a href="/apply-for-link" target="_blank">
-          <li class="mdui-list-item mdui-ripple">
-            
-              <i class="mdui-list-item-icon mdui-icon fa fa-child mdui-text-center"></i>
-            
-            
-            
-            <div class="mdui-list-item-content">Test2</div>
-          </li>
-        </a>
-      
-    
-      
-        <a href="/timeline" target="_blank">
-          <li class="mdui-list-item mdui-ripple">
-            
-            
-              <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-            
-            
-            <div class="mdui-list-item-content">Test3</div>
-          </li>
-        </a>
-      
-    
-      
-        <div class="mdui-collapse-item">
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-            
-            
-              <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
-            
-            
-            <div class="mdui-list-item-content">Test4</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
-            
-              <a href="/myfriends" class="mdui-list-item mdui-ripple" target="_blank">
-                TEST1
-              </a>
-            
-              <a href="/timeline" class="mdui-list-item mdui-ripple" target="_blank">
-                TEST2
-              </a>
-            
-              <a href="/timeline" class="mdui-list-item mdui-ripple" target="_blank">
-                Test3
-              </a>
-            
-          </div>
-        </div>
-      
     
   </div>
 
@@ -358,32 +302,10 @@
   <div class="post-header-container">
     <div class="post-title mdui-text-truncate">Hello World</div>
     <div class="post-actions">
-      <span>Jul 11, 2017</span>
+      <span>7月 11, 2017</span>
       
 
       
-  <button class="mdui-btn mdui-ripple mdui-btn-icon" mdui-menu="{target: '#menu-post-share'}">
-    <i class="mdui-icon material-icons">&#xe80d;</i>
-  </button>
-
-  <ul class="mdui-menu" id="menu-post-share">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-  </ul>
-
 
     </div>
   </div>
@@ -392,7 +314,7 @@
   <div class="post-adjust">
     <div class="mdui-card card-bottom-fix menu-fix animate mdui-hoverable" id="blog-post">
       <div class="mdui-card-media">
-        <img src="/img/random/picHD_26.png"/>
+        <img src="/img/random/picHD_15.png"/>
       </div>
       <div class="post-content mdui-typo no-margin
         null
@@ -413,7 +335,7 @@
       
         <div class="posts-info">
           
-            <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-color-red mdui-ripple mdui-center mdui-btn-dense" mdui-tooltip="{content: 'Buy me a beer?', position: 'right'}" mdui-dialog="{target: '#donateDialog'}"><i class="mdui-icon fa fa-beer mdui-text-center"></i></button>
+            <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-color-red mdui-ripple mdui-center mdui-btn-dense" mdui-tooltip="{content: '打赏我一个吧', position: 'right'}" mdui-dialog="{target: '#donateDialog'}"><i class="mdui-icon fa fa-beer mdui-text-center"></i></button>
           
           <div class="flex-spacer"></div>
           
@@ -421,6 +343,10 @@
               <span class="mdui-chip-icon"><i class="mdui-icon mdui-text-color-black-icon material-icons">&#xe149;</i></span>
             </div>
             <div class="content mdui-typo">
+              
+                <a href="/categories/hexo教程/">
+                  <span>hexo教程</span>
+                </a>
               
             </div>
           
@@ -453,7 +379,7 @@
       <a href="/2017/07/11/写点什么好呢/" class="content no-text-decoration mdui-text-left">
         <div>
           <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
-          <span class="mdui-typo-body-2-opacity mdui-text-center">Newer Post</span>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">新的文章</span>
         </div>
         <div class="mdui-typo-title mdui-text-truncate">
           写点什么好呢
@@ -479,50 +405,46 @@
 </main>
 
 <div id="outdated" style="z-index: 9999;">
-  <h6>Your browser is out-of-date!</h6>
-  <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update my browser now </a></p>
-  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+  <h6>你的浏览器一直过气辣！</h6>
+  <p>赶紧升级浏览器来访问本站吧！<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">现在就去</a></p>
+  <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="关闭">&times;</a></p>
 </div>
 
   <div class="mdui-dialog" id="donateDialog">
-    <div class="mdui-dialog-title">Buy me a beer?</div>
+    <div class="mdui-dialog-title">打赏我一个吧</div>
     <div class="mdui-dialog-content no-padding-bottom">
       <div class="mdui-list">
         
-          <a href="/img/avatar.png" title="wechat" class="mdui-list-item mdui-ripple" target="_blank">
-            
-              <i class="mdui-list-item-icon mdui-icon fa fa-wechat mdui-text-center"></i>&emsp;
+          <a href="/img/wx.png" title="微信" class="mdui-list-item mdui-ripple" target="_blank">
             
             
             
-            wechat
+            微信
           </a>
         
-          <a href="https://paypal.com" title="paypay" class="mdui-list-item mdui-ripple" target="_blank">
-            
-              <i class="mdui-list-item-icon mdui-icon fa fa-paypal mdui-text-center"></i>&emsp;
+          <a href="/img/zfb.png" title="支付宝" class="mdui-list-item mdui-ripple" target="_blank">
             
             
             
-            paypay
+            支付宝
           </a>
         
       </div>
     </div>
     <div class="mdui-dialog-actions">
-      <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>cancel</button>
+      <button class="mdui-btn mdui-ripple mdui-ripple" mdui-dialog-close>才不呢</button>
     </div>
   </div>
 
 
 <div class="mdui-dialog" id="contactDialog">
   <div class="mdui-dialog-title">
-    How to contact me
+    如何联系我
   </div>
   <div class="mdui-dialog-content no-padding-bottom">
     <div class="mdui-list">
       
-        <a href="https://twitter.com" title="Twitter" class="mdui-list-item mdui-ripple" target="_blank">
+        <a href="https://twitter.com/waitinghc" title="Twitter" class="mdui-list-item mdui-ripple" target="_blank">
           
             <i class="mdui-list-item-icon mdui-icon fa fa-twitter mdui-text-center"></i>&emsp;
           
@@ -531,36 +453,38 @@
           Twitter
         </a>
       
-        <a href="https://facebook.com" title="Facebook" class="mdui-list-item mdui-ripple" target="_blank">
+        <a href="https://www.facebook.com/waitinghc?ref=bookmarks" title="Facebook" class="mdui-list-item mdui-ripple" target="_blank">
+          
+            <i class="mdui-list-item-icon mdui-icon fa fa-facebook mdui-text-center"></i>&emsp;
           
           
-          
-            <i class="mdui-list-item-icon"></i>&emsp;
           
           Facebook
         </a>
       
-        <a href="https://facebook.com" title="TEST" class="mdui-list-item mdui-ripple" target="_blank">
+        <a href="https://github.com/waitinghc" title="Github" class="mdui-list-item mdui-ripple" target="_blank">
+          
+            <i class="mdui-list-item-icon mdui-icon fa fa-github mdui-text-center"></i>&emsp;
           
           
-            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe168;</i>&emsp;
           
-          
-          TEST
+          Github
         </a>
       
-        <a href="https://facebook.com" title="TEST1" class="mdui-list-item mdui-ripple" target="_blank">
+        <a href="http://weibo.com/loadingx/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" title="新浪" class="mdui-list-item mdui-ripple" target="_blank">
+          
+            <i class="mdui-list-item-icon mdui-icon fa fa-weibo mdui-text-center"></i>&emsp;
           
           
           
-          TEST1
+          新浪
         </a>
       
     </div>
   </div>
   <div class="mdui-dialog-actions">
     <button class="mdui-btn mdui-ripple" mdui-dialog-close>
-      Close
+      关闭
     </button>
   </div>
 </div>
@@ -663,7 +587,7 @@
       counter: false,
       dynamicEl: [{
         "src": img_src,
-        'subHtml': "<span author>waitinghc</span> • Public<div descr>" + img_alt + "</div>"
+        'subHtml': "<span author>waitinghc</span> • 公开<div descr>" + img_alt + "</div>"
       }],
     });
   });
