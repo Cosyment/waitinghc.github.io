@@ -1,0 +1,21 @@
+slogan: true
+# other: '个人信息'
+hellow:
+  main:
+    hi:
+      content: xxxxxx
+      s_img: /img/avatar.png
+    hi1:
+      content: xx
+      link: //google.com
+      s_img: /img/favicon.png
+    hi2:
+      content: aaaa
+  more:
+    hi3:
+      content: '561456415341'
+      link: //google.com
+      s_img: /img/favicon.png
+    hi4:
+      content: 'xxxxxxx'
+      s_img: /img/favicon.png
