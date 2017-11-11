@@ -12,7 +12,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.4.1 -->
   <meta charset="UTF-8">
-  <title>Hello World - Witinghc</title>
+  <title>AndroidStudio调试之旅 - Witinghc</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -36,7 +36,7 @@
   
       <meta name="description" content="Catch one&#39;s heart,never be apart.">
   
-  <meta name="keywords" content="blog, hexo, mdui">
+  <meta name="keywords" content="blog, hexo, mdui,AndroidStudio">
 
   <!--iOS -->
   <meta name="apple-mobile-web-app-title" content="Witinghc">
@@ -51,13 +51,13 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://waitinghc.com/child">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="Hello World - Witinghc | Witinghc">
+  <meta property="og:title" content="AndroidStudio调试之旅 - Witinghc | Witinghc">
   <meta property="og:image" content="/img/favicon.png" />
   
         <meta property="og:description" content="Catch one&#39;s heart,never be apart.">
     
 
-    
+    <meta property="og:article:tag" content="AndroidStudio"> 
 
   <!-- Cache -->
   <meta http-equiv="Cache-Control" content="max-age=7200" />
@@ -306,9 +306,9 @@
   
 ">
   <div class="post-header-container">
-    <div class="post-title mdui-text-truncate">Hello World</div>
+    <div class="post-title mdui-text-truncate">AndroidStudio调试之旅</div>
     <div class="post-actions">
-      <span>7月 11, 2017</span>
+      <span>11月 11, 2017</span>
       
 
       
@@ -320,21 +320,136 @@
   <div class="post-adjust">
     <div class="mdui-card card-bottom-fix menu-fix animate mdui-hoverable" id="blog-post">
       <div class="mdui-card-media">
-        <img src="/img/random/picHD_10.png"/>
+        <img src="/img/random/picHD_7.png"/>
       </div>
       <div class="post-content mdui-typo no-margin
         null
         
       " id="post-content">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="AndroidStudio调试之旅"><a href="#AndroidStudio调试之旅" class="headerlink" title="AndroidStudio调试之旅"></a>AndroidStudio调试之旅</h2><p>​    在平常开发中难免会写出一些bug，明显的bug通过分析代码可以找出来问题所在，但也会有一些隐藏很深的bug，单凭肉眼分析代码很难定位，这个时候就需要编译器协助，AndroidStudio就提供了非常强大的调试功能，帮助我们能快速定位解决bug，告别加班！！！</p>
+<h4 id="开启调试模式"><a href="#开启调试模式" class="headerlink" title="开启调试模式"></a>开启调试模式</h4><p>​    首先了解下开启调试的方法，在AndroidStudio中开启调试模式有两种方法，即普通Debug和Attach debugger to Android process，Debug模式大家可能经常用到，感受应该都是比较慢，特别大工程，等待时间就更长了，而另一种相对来说就快很多。</p>
+<h6 id=""><a href="#" class="headerlink" title=""></a><img src="/Users/hechao/Desktop/debug/QQ20171111-130134@2x.png" alt="QQ20171111-130134@2x"></h6><p>​    针对Attach debugger 模式开启时会有提示选项 如下图：</p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-135020@2x.png" alt="QQ20171111-135020@2x"></p>
+<p><strong>Auto</strong><br>​    如果希望 Android Studio 自动为您要调试的代码选择最合适的选项，请选择此类型。例如，如果您的项目包含任何 C 或 C++ 代码，Android Studio 会自动使用 Hybrid 调试类型。否则，Android Studio 会使用 Java 调试类型。<br><strong>Java</strong><br>​    如果您只想调试以 Java 编写的代码，请选择此类型 - Java 调试程序会忽略您在原生代码中设置的任何断点或监视。</p>
+<h6 id="在早期AndroidStudio-还有如下选项，本人用的AS3-0目前只有Auto-Java"><a href="#在早期AndroidStudio-还有如下选项，本人用的AS3-0目前只有Auto-Java" class="headerlink" title="在早期AndroidStudio 还有如下选项，本人用的AS3.0目前只有Auto/Java"></a>在早期AndroidStudio 还有如下选项，本人用的AS3.0目前只有Auto/Java</h6><p><strong>Native</strong><br>​    如果您只想使用 LLDB 来调试代码，请选择此类型。使用此调试类型时，Java 调试程序会话视图不可用。默认情况下，LLDB 只检查您的原生代码，而会忽略 Java 代码中的断点。如果您也想调试 Java 代码，则应切换到 Auto 或 Hybrid 调试类型。<br><strong>Hybrid</strong><br>​    如果您想在调试 Java 代码与调试原生代码之间切换，请选择此类型。Android Studio 会将 Java 调试程序和 LLDB 都连接到您的应用进程，一个用于 Java 调试程序，一个用于 LLDB，这样一来，您不必重新启动应用或更改调试配置，便可同时对 Java 代码和原生代码中的断点进行检查</p>
+<h4 id="调试区域介绍"><a href="#调试区域介绍" class="headerlink" title="调试区域介绍"></a>调试区域介绍</h4><p>​    接下来了解下调试功能面板（以下就是整个调试区域图）</p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-130528@2x.png" alt="QQ20171111-130528@2x"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">功能键</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Rerun Android Debugger.png" alt="Rerun Android Debugger"></td>
+<td style="text-align:center">Rerun Android Debugger</td>
+<td style="text-align:center">重新恢复调试模式。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Resume Program.png" alt="Resume Program"></td>
+<td style="text-align:center">Resume Program</td>
+<td style="text-align:center">一直运行程序直到碰到下一个断点。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Pause Program.png" alt="Pause Program"></td>
+<td style="text-align:center">Pause Program</td>
+<td style="text-align:center">暂停程序，等待下一步操作。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Stop.png" alt="Stop"></td>
+<td style="text-align:center">Stop</td>
+<td style="text-align:center">停止当前调试。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/View Breakpoints.png" alt="View Breakpoints"></td>
+<td style="text-align:center">View Breakpoints</td>
+<td style="text-align:center">查看你设置过的所有断点并可以设置断点的一些属性。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Mute Breakpoints.png" alt="Mute Breakpoints"></td>
+<td style="text-align:center">Mute Breakpoints</td>
+<td style="text-align:center">启用/禁用所有断点。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Show Execution Points.png" alt="Show Execution Points"></td>
+<td style="text-align:center">Show Execution Points</td>
+<td style="text-align:center">具体功能还待发掘</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Step Over.png" alt="Step Over"></td>
+<td style="text-align:center">Step Over</td>
+<td style="text-align:center">程序向下执行一行，如果当前行有方法调用，这个方法执行完毕返回，然后到下一行。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Step Into.png" alt="Step Into"></td>
+<td style="text-align:center">Step Into</td>
+<td style="text-align:center">程序向下执行一行，如果当前行有用户自定义方法（非官方类库方法）调用，则进入该方法。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Force Step Into.png" alt="Force Step Into"></td>
+<td style="text-align:center">Force Step Into</td>
+<td style="text-align:center">程序向下执行一行，如果当前行有方法调用，则进入该方法。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Step Out.png" alt="Step Out"></td>
+<td style="text-align:center">Step Out</td>
+<td style="text-align:center">如果在调试的时候你进入了一个方法，并觉得该方法没有问题，你就可以使用step out跳出该方法，返回到该方法被调用处的下一行语句。值得注意的是，该方法已执行完毕。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Run to Cursor.png" alt="Run to Cursor"></td>
+<td style="text-align:center">Run to Cursor</td>
+<td style="text-align:center">一直运行到光标所在的位置。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/Evaluate Expression.png" alt="Evaluate Expression"></td>
+<td style="text-align:center">Evaluate Expression</td>
+<td style="text-align:center">通过它可以查看当前类中所有的变量的值，并且可以计算表达式的值，甚至可以运行某个函数，得到结果。</td>
+</tr>
+<tr>
+<td style="text-align:center"><img src="/Users/hechao/Desktop/debug/New Watch.png" alt="New Watch"></td>
+<td style="text-align:center">New Watch</td>
+<td style="text-align:center">添加观察属性，调试时能方便观察该属性变化。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="断点类型"><a href="#断点类型" class="headerlink" title="断点类型"></a>断点类型</h4><h6 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="/Users/hechao/Desktop/debug/QQ20171111-150835@2x.png" alt="QQ20171111-150835@2x"></h6><h6 id="左侧断点类型介绍"><a href="#左侧断点类型介绍" class="headerlink" title="左侧断点类型介绍"></a>左侧断点类型介绍</h6><p>​    <strong>Java Line Breakpoints</strong>  <em>执行到当前行触发此断点</em></p>
+<p>​    <strong>Java Method Breakpoints</strong>  <em>断点位置与方法名同行，愈加方便的观察参数和返回值</em></p>
+<p>​    <strong>Java Field Watchpoints</strong>  <em>断点位于某个字段属性声明位置，当字段被重新赋值时触发断点</em></p>
+<p>​    <strong>Java Exception Breakpoints</strong>  <em>当抛出某个异常时，自动触发</em></p>
+<p>​    <strong>Exception/Symbolic Breakpoints</strong>  <em>未知</em></p>
+<p>​    </p>
+<h6 id="右侧功能区介绍"><a href="#右侧功能区介绍" class="headerlink" title="右侧功能区介绍"></a>右侧功能区介绍</h6><p>​    <strong>Enable</strong>  <em>断点是否可用</em></p>
+<p>​    <strong>Suspend</strong>  <em>执行到断点时，程序是否暂停</em></p>
+<p>​    <strong>Condition</strong>  <em>执行此断点条件</em></p>
+<p>​    <strong>Log message to console</strong>  <em>执行到此断点时，打印一行日志</em></p>
+<p>​    <strong>Evaluate log</strong>  <em>执行到此断点时，打印一样的自定义日志，可以包含程序中的变量或表达式</em></p>
+<p>​    <strong>Remove once hit</strong>  <em>断点触发后移除</em></p>
+<h4 id="高级调试应用"><a href="#高级调试应用" class="headerlink" title="高级调试应用"></a>高级调试应用</h4><p>​    很多时候简单的调试对于复杂的逻辑定位比较困难，有时可能需要反复尝试才能找出问题所在。特别对于一些代码量庞大的类，如果普通调试时要跟踪某个变量的变化是比较费时的，还有一些对于网络请求场景，如果要修改传递异常的参数，只能手动改代码，然后重新开始调试，可以说相当麻烦。然后AndroidStudio已经提供了强大的调试功能，可以很方便在调试过程中实时跟踪变量值变化或修改，以及表达式操作，日志输入等。</p>
+<p>​    </p>
+<p><strong>增加观察变量</strong></p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-155646@2x.png" alt="QQ20171111-155646@2x"></p>
+<p><strong>动态修改变量值</strong></p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-160134@2x.png" alt="QQ20171111-160134@2x">    </p>
+<p>​    举个例子：对于方法test2中 ，只有当for循环里面条件满足 field1 == 3时才会给field1赋值并调用test3方法，此种场景中，如果当i &lt; 100甚至 i&lt; 1000，field1 == 90时，跟踪执行无疑会非常费时，但可以用更简单的方法实现，模拟满足这一条件，就是调试过程中改变field1成任意我们想要的值，怎么做呢？</p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-161112@2x.png" alt="QQ20171111-161112@2x"></p>
+<p>​    很简单，点击此变量，鼠标右键Set Value或F2，然后就可以设置成任意我们想要的值就可以了。</p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-161808@2x.png" alt="QQ20171111-161808@2x"></p>
+<p><strong>条件断点</strong></p>
+<p>​    当执行到某一断点时，常规流程时，执行此断点，但由于某原因并不想立刻执行断点时，就可以使用条件断点，设置此断点执行条件，满足条件后再执行。</p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-165007@2x.png" alt="QQ20171111-165007@2x"></p>
+<p>​    设置断点条件后，只有当field1变量满足field1 == 3 时该断点才会执行，并打印日志，此过程并不阻碍代码执行。</p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-165913@2x.png" alt="QQ20171111-165913@2x"></p>
+<p>​    可以看到，当满足断点执行条件后才执行，并打印了断点日志，对于此种情况大家可以举一反三，相信实际开发中能很大程度上提高调试效率。</p>
+<p><strong>异常断点应用</strong></p>
+<p>​    程序崩溃应该是所有程序员最深恶痛绝的吧，在我这明明是正常的，到你那怎么会崩溃呢？对于明显的崩溃情况都能快速定位出来，而对于隐藏较深的崩溃情况，可能还一时半会找不出原因所在，无法快速定位怎么办呢？是时候尝试下异常断点了，这种无需手动打断点，只需开启调试模式并在断点视图上选中Java Exception Breakpoints，然后执行，慢慢等待Bug露出原形了。</p>
+<h6 id="开启异常断点"><a href="#开启异常断点" class="headerlink" title="开启异常断点"></a>开启异常断点</h6><p><img src="/Users/hechao/Desktop/debug/QQ20171111-175347@2x.png" alt="QQ20171111-175347@2x"></p>
+<h6 id="执行程序，跟踪结果"><a href="#执行程序，跟踪结果" class="headerlink" title="执行程序，跟踪结果"></a>执行程序，跟踪结果</h6><p><img src="/Users/hechao/Desktop/debug/QQ20171111-175605@2x.png" alt="QQ20171111-175605@2x"></p>
+<p><img src="/Users/hechao/Desktop/debug/QQ20171111-175938@2x.png" alt="QQ20171111-175938@2x"></p>
+<p>​    可以看到，整个过程并没有打任何断点，设置了异常断点后，发生Exception时自动定位代码行，并正常输出日志，是不是相当方便、快捷。</p>
+<p>​    本文介绍内容对于AndroidStudio强大的调试功能，只是冰山一角，希望对大家有或多或少的帮助，减少Bug是我们的宗旨，远离加班是我们的理想。以后发现更好玩的调试功能继续完善！！！</p>
 
       </div>
 
@@ -350,10 +465,6 @@
             </div>
             <div class="content mdui-typo">
               
-                <a href="/categories/hexo教程/">
-                  <span>hexo教程</span>
-                </a>
-              
             </div>
           
           
@@ -361,6 +472,10 @@
               <span class="mdui-chip-icon"><i class="mdui-icon mdui-text-color-black-icon fa fa-tags"></i></span>
             </div>
             <div class="content mdui-typo">
+              
+                <a href="/tags/AndroidStudio/">
+                  <span>AndroidStudio</span>
+                </a>
               
             </div>
           
@@ -375,27 +490,27 @@
       mdui-color-theme
     
     ">
-      <ul class="mdui-list post-toc"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Quick-Start"><span class="post-toc-number">1.<span class="post-toc-text">Quick Start</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#Create-a-new-post"><span class="post-toc-number">1.1.<span class="post-toc-text">Create a new post</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Run-server"><span class="post-toc-number">1.2.<span class="post-toc-text">Run server</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Generate-static-files"><span class="post-toc-number">1.3.<span class="post-toc-text">Generate static files</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#Deploy-to-remote-sites"><span class="post-toc-number">1.4.<span class="post-toc-text">Deploy to remote sites</span></span></a></a></ul></a></ul>
+      <ul class="mdui-list post-toc"><a class="mdui-list-item mdui-ripple post-toc-link" href="#AndroidStudio调试之旅"><span class="post-toc-number">1.<span class="post-toc-text">AndroidStudio调试之旅</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#开启调试模式"><span class="post-toc-number">1.0.1.<span class="post-toc-text">开启调试模式</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#"><span class="post-toc-number">1.0.1.0.1.<span class="post-toc-text"></span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#在早期AndroidStudio-还有如下选项，本人用的AS3-0目前只有Auto-Java"><span class="post-toc-number">1.0.1.0.2.<span class="post-toc-text">在早期AndroidStudio 还有如下选项，本人用的AS3.0目前只有Auto/Java</span></span></a></a></ul></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#调试区域介绍"><span class="post-toc-number">1.0.2.<span class="post-toc-text">调试区域介绍</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#断点类型"><span class="post-toc-number">1.0.3.<span class="post-toc-text">断点类型</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#-1"><span class="post-toc-number">1.0.3.0.1.<span class="post-toc-text"></span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#左侧断点类型介绍"><span class="post-toc-number">1.0.3.0.2.<span class="post-toc-text">左侧断点类型介绍</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#右侧功能区介绍"><span class="post-toc-number">1.0.3.0.3.<span class="post-toc-text">右侧功能区介绍</span></span></a></a></ul></a></ul></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#高级调试应用"><span class="post-toc-number">1.0.4.<span class="post-toc-text">高级调试应用</span></span></a><ul class="mdui-list-dense post-toc-child"><a class="mdui-list-item mdui-ripple post-toc-link" href="#开启异常断点"><span class="post-toc-number">1.0.4.0.1.<span class="post-toc-text">开启异常断点</span></span></a></a><a class="mdui-list-item mdui-ripple post-toc-link" href="#执行程序，跟踪结果"><span class="post-toc-number">1.0.4.0.2.<span class="post-toc-text">执行程序，跟踪结果</span></span></a></a></ul></a></ul></a></ul></a></ul></a></ul>
     </div>
   </div>
 </div>
 <div class="post-pagination mdui-color-theme">
   
-    <div class="prev mdui-ripple mdui-color-theme mdui-valign">
-      <a href="/2017/07/11/写点什么好呢/" class="content no-text-decoration mdui-text-left">
-        <div>
-          <i class="mdui-icon material-icons mdui-text-center">&#xe5cb;</i>
-          <span class="mdui-typo-body-2-opacity mdui-text-center">新的文章</span>
-        </div>
-        <div class="mdui-typo-title mdui-text-truncate">
-          写点什么好呢
-        </div>
-      </a>
-    </div>
+    <div class="flex-spacer mdui-hidden-xs"></div>
   
 
   
-      <div class="flex-spacer mdui-hidden-xs"></div>
+    <div class="next mdui-ripple mdui-color-theme mdui-valign">
+      <a href="/2017/07/12/test/" class="content no-text-decoration mdui-text-right">
+        <div>
+          <span class="mdui-typo-body-2-opacity mdui-text-center">旧的文章</span>
+          <i class="mdui-icon material-icons mdui-text-center">&#xe5cc;</i>
+        </div>
+        <div class="mdui-typo-title mdui-text-truncate">
+          test
+        </div>
+      </a>
+    </div>
     
 </div>
 
@@ -403,7 +518,7 @@
   <i class="mdui-icon material-icons">&#xe242;</i>
 </button>
 <ul class="mdui-menu mdui-typo no-margin-bottom auto-width" id="menu-toc" style="padding: 8px;max-height: 80%">
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AndroidStudio调试之旅"><span class="toc-text">AndroidStudio调试之旅</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#开启调试模式"><span class="toc-text">开启调试模式</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#"><span class="toc-text"></span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#在早期AndroidStudio-还有如下选项，本人用的AS3-0目前只有Auto-Java"><span class="toc-text">在早期AndroidStudio 还有如下选项，本人用的AS3.0目前只有Auto/Java</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#调试区域介绍"><span class="toc-text">调试区域介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#断点类型"><span class="toc-text">断点类型</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#-1"><span class="toc-text"></span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#左侧断点类型介绍"><span class="toc-text">左侧断点类型介绍</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#右侧功能区介绍"><span class="toc-text">右侧功能区介绍</span></a></li></ol></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#高级调试应用"><span class="toc-text">高级调试应用</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#开启异常断点"><span class="toc-text">开启异常断点</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#执行程序，跟踪结果"><span class="toc-text">执行程序，跟踪结果</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
 </ul>
 
 
